@@ -5,6 +5,11 @@ Mikaela Angelina Uy<sup>\*</sup>, Yen-Yu Chang<sup>\*</sup>, Minhyuk Sung, Purvi
 
 CVPR 2022
 
+![pic-network](teaser_v4-compressed.png)
+
+## Introduction
+We propose **Point2Cyl**, a supervised network transforming a raw 3D **point** cloud **to** a set of extrusion **cylinders**. Reverse engineering from a raw geometry to a CAD model is an essential task to enable manipulation of the 3D data in shape editing software and thus expand their usages in many downstream applications. Particularly, the form of CAD models having a sequence of extrusion cylinders — a 2D sketch plus an extrusion axis and range — and their boolean combinations is not only widely used in the CAD community/software but also has great expressivity of shapes, compared to having limited types of primitives (e.g., planes, spheres, and cylinders). In this work, we introduce a neural network that solves the extrusion cylinder decomposition problem in a geometry-grounded way by first learning un- derlying geometric proxies. Precisely, our approach first predicts per-point segmentation, base/barrel labels and nor- mals, then estimates for the underlying extrusion param- eters in differentiable and closed-form formulations. Our experiments show that our approach demonstrates the best performance on two recent CAD datasets, Fusion Gallery and DeepCAD, and we further showcase our approach on reverse engineering and editing.
+
 ```
 @inproceedings{uy-point2cyl-cvpr22,
       title = {Point2Cyl: Reverse Engineering 3D Objects from Point Clouds to Extrusion Cylinders},
@@ -13,8 +18,6 @@ CVPR 2022
       year = {2022}
   }
 ```
-## Introduction
-We propose **Point2Cyl**, a supervised network transforming a raw 3D **point** cloud **to** a set of extrusion **cylinders**. Reverse engineering from a raw geometry to a CAD model is an essential task to enable manipulation of the 3D data in shape editing software and thus expand their usages in many downstream applications. Particularly, the form of CAD models having a sequence of extrusion cylinders — a 2D sketch plus an extrusion axis and range — and their boolean combinations is not only widely used in the CAD community/software but also has great expressivity of shapes, compared to having limited types of primitives (e.g., planes, spheres, and cylinders). In this work, we introduce a neural network that solves the extrusion cylinder decomposition problem in a geometry-grounded way by first learning un- derlying geometric proxies. Precisely, our approach first predicts per-point segmentation, base/barrel labels and nor- mals, then estimates for the underlying extrusion param- eters in differentiable and closed-form formulations. Our experiments show that our approach demonstrates the best performance on two recent CAD datasets, Fusion Gallery and DeepCAD, and we further showcase our approach on reverse engineering and editing.
 
 ## Pre-requisites
 Code was tested using Python 3.8 with CUDA 11.0
