@@ -61,3 +61,5 @@ Example commands to run visualization script are as follows:
 python visualizer.py --logdir=results/Point2Cyl --model_id=55838_a1513314_0000_1 --dump_dir=dump_55838_a1513314_0000_1 --output_dir=output_55838_a1513314_0000_1 --data_dir=data/
 ```
 
+## License
+This repository is released under MIT License (see LICENSE file for details).
