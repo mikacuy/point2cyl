@@ -29,7 +29,7 @@ pip install -r requirements.txt
 ```
 
 ## Data download
-Dataset downloads can be found in the [link](http://download.cs.stanford.edu/orion/Point2Cyl/data.tar.gz), and it should be extracted in the project home folder.
+Dataset downloads can be found in the [link](http://download.cs.stanford.edu/orion/Point2Cyl/data.tar.gz), and it should be extracted in the project home folder. DeepCAD processed data and splits can be found [here](http://download.cs.stanford.edu/orion/point2cyl/DeepCAD.zip).
 
 ## Training
 * To train Point2Cyl without sketches, example commands are as follows:
@@ -53,7 +53,7 @@ python eval.py --logdir=results/Point2Cyl/ --dump_dir=dump/Point2Cyl/ --data_dir
 ```
 
 ## Pre-trained Models
-The pretrained models for our Point2Cyl can be found in [results](results/).
+The pretrained models for our Point2Cyl can be found in [results](results/). DeepCAD pretrained model can be downloaded [here](http://download.cs.stanford.edu/orion/point2cyl/DeepCAD.zip).
 
 ## Visualization
 Example commands to run visualization script are as follows:
